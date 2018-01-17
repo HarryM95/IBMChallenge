@@ -17,10 +17,16 @@ import javax.ws.rs.core.MediaType;
 
 public class filmsService {
 	
-	
     JsonArray jarray = Json.createArrayBuilder().build();
 
+
 	   @GET 
+	   @Produces(MediaType.TEXT_HTML) 
+	   public String test() {
+		   return "TestTestTest";
+	   }
+    
+    	/*@GET 
 	   @Produces(MediaType.TEXT_HTML) 
 	   public String getText() throws MalformedURLException{ 
 		   
@@ -47,7 +53,7 @@ public class filmsService {
 			
 		      return newArray.toString();
 		        
-	   }  
+	   }  */
 	   
 
 	   @GET 
